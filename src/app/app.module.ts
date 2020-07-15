@@ -10,6 +10,8 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/views/home/home.component';
+import { AuthGuard } from './guards/auth-guard';
+import { UserService } from './components/user/user.service';
 
 
 @NgModule({
@@ -27,7 +29,7 @@ import { HomeComponent } from './components/views/home/home.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthGuard , UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
