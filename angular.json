@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "culture-admim"
+    }
+  },
+  "defaultProject": "culture-admim",
+  "cli": {
+    "analytics": "5ecce3e2-a283-46b3-8161-bea2ff88e4cb"
+  }
 }

@@ -1,0 +1,220 @@
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: tomato; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+
+body{
+    overflow: hidden;
+}
+
+#Container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    background-image: url(../../../../assets/lugares/celularcastle.png);
+    background-attachment: fixed;
+    background-size: 75% 100%;
+}
+#Login{
+    margin-left: 73vw;
+    width: 27%;
+    height: 100%;
+    box-shadow: 1px 1px 10px #858585;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(to bottom, white 80%, rgb(49, 175, 66)); */
+    background-size: 100% 100%;
+    background-color: white;
+}
+#Login img{
+    width: 100%;
+    height: 100px;
+    margin-top: 3%;
+}
+#Login .inputs{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Login p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    font-size: 12px;
+}
+.inputs input , .inputs button{
+    width: 90%;
+    border-radius: 15px;
+    border: 1px solid #cfcfcf;
+    text-align: center;
+    margin: 2%;
+    padding: 8px;
+}
+.inputs input::placeholder{
+    text-align: center;
+}
+.buttonLogin{
+    width: 95% !important;
+    background-color: #fe7e01;
+    color: white;
+    font-weight: bold;
+    border: 0px !important;
+}
+.footer{
+    width: 100%;
+    margin-top: -28px;
+    color: white;
+    float: left;
+    font-size: 10px;
+    padding: 6px;
+}
+
+/* Id's das divs Logar/Cadastrar/Email */
+#logar{
+    transition: 4s;
+}
+#cadastro{
+    display: none;
+    transition: 4s;
+}
+#email{
+    display: none;
+    transition: 4s;
+}
+/* Fim id's */
+
+
+/* Animações */
+.LogoSplash{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    /* background-image: url(../IMG/Logos/CLOGOCulture.png); */
+    background-size: 100% 100%;
+    transition: 5s;
+    opacity: 0;
+}
+.Splash{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 0% 50% 50% 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    background-color: #c92153;
+    transition: 4s;
+    box-shadow: 2px 2px 10px #555555;
+    justify-content: center;
+    align-items:  center;
+    display: flex;
+}
+.title{
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    border: 2px solid white;
+    border-right: 0px;
+    border-bottom: 0px;
+    padding: 20px;
+    padding-top: 5px;
+    margin: 4%;
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif !important;
+    color: white;
+    transition: 5s;
+    animation:  showit 3s;
+}
+.title p{
+    transition: 4s;
+    animation: showp 4s;
+}
+.title p b{
+    transition: 6s;
+    color: #fedd14;
+    animation: showp2 4s;
+}
+@keyframes showp{
+    0%{
+        color: transparent;
+    }
+    80%{
+        color: transparent;
+    }
+    100%{
+        color: white;
+    }
+}
+@keyframes showp2{
+    0%{
+        color: transparent;
+    }
+    80%{
+        color: transparent;
+    }
+    100%{
+        color:transparent;
+    }
+}
+@keyframes showit{
+    0%{
+        width:0px;
+        height: 0px;
+        color: transparent;
+    }
+    99%{
+        color: transparent;
+    }
+    100%{
+        width: 500px;
+        height: 100px;
+    }
+}
+/* Fim Animações */
+
+/* Resnponsividade */
+@media screen and (max-width: 1187px){
+    #Container{
+        width: 100vw;
+        height: 100vh;
+        background-size: 100% 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    #Login{
+        float: right;
+        width: 350px;
+        height: 450px;
+        margin-left: 0vw;
+        box-shadow: 1px 1px 10px #cfcfcf;
+    }
+    .title{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
